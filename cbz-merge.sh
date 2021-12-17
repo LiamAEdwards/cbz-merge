@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Enter directory you wish to run cbz-merge. - Example directory/subdirectory"
+echo "Enter absolute path to the directory you wish cbz-merge to run. - Example /home/USER/directory/subdirectory"
 read directory
-currentDir=${PWD##*$directory}   
-echo $currentDir/
+#currentDir=${PWD##*$directory}   
+
 echo $directory
-unzip "$currentDir/$directory/*.cbz" -d $currentDir/$directory 
-zip -r "$currentDir/$directory.cbz" $currentDir/$directory/* -x "*.cbz"
+unzip $directory/*.cbz -d $directory 
+zip -r $directory.cbz $directory/* -x "*.cbz"
 
