@@ -4,9 +4,15 @@
 
 cbz-merge will convert your multiple .cbz files for one comic/manga and create one big .cbz file. 
 
-Why?
+### Why?
 
 So you can convert to a suitable filetype for your e-reader and not litter the library with multiple files. 
 
 
-
+### TODO
+- Allow a user to pass the directory at runtime.
+- Add flags - Ex - Flag to ZIP a directory of JPEGs to CBZ.
+- Add safety checks to prevent accidental zipping.
+- Add logging so users can see what happened during the run.
+- Clean up unzip after run.
+- Implement 'ebook-convert'
