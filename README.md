@@ -11,8 +11,8 @@ So you can convert to a suitable filetype for your e-reader and not litter the l
 
 ### TODO
 - ~~Add logging so users can see what happened during the run.~~
+- ~~Implement 'ebook-convert'~~
 - Allow a user to pass the directory at runtime.
 - Add flags - Ex - Flag to ZIP a directory of JPEGs to CBZ.
 - Add safety checks to prevent accidental zipping.
 - Clean up unzip after run.
-- Implement 'ebook-convert'
