@@ -5,5 +5,5 @@ read directory
 basedir=$(basename $directory)
 
 echo $directory
-unzip "$directory/*.cbz" -d "$directory"
-zip -r "$directory/$basedir.cbz" "$directory/" -x "*.cbz"
+unzip "$directory/*.cbz" -d "$directory" | tee -a cbz-merge.log
+zip -r "$directory/$basedir.cbz" "$directory/" -x "*.cbz" | tee -a cbz-merge.log
